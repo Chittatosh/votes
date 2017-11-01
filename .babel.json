@@ -1,0 +1,1566 @@
+{
+  "{\"filename\":\"/app/server.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "react",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "React"
+              }
+            ]
+          },
+          {
+            "source": "react-dom/server",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "ReactDOMServer"
+              }
+            ]
+          },
+          {
+            "source": "body-parser",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "bodyParser"
+              }
+            ]
+          },
+          {
+            "source": "./api",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "apiRouter"
+              }
+            ]
+          },
+          {
+            "source": "./src/components/App",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "App"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _server = require('react-dom/server');\n\nvar _server2 = _interopRequireDefault(_server);\n\nvar _bodyParser = require('body-parser');\n\nvar _bodyParser2 = _interopRequireDefault(_bodyParser);\n\nvar _api = require('./api');\n\nvar _api2 = _interopRequireDefault(_api);\n\nvar _App = require('./src/components/App');\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// server.js where your node app starts\nvar app = (0, _express2.default)();\n\napp.use(_bodyParser2.default.json());\napp.use(_bodyParser2.default.urlencoded({ extended: false }));\n\napp.use(function (req, res, next) {\n  console.log(req.method + ' request for \\'' + req.url + '\\' - ' + JSON.stringify(req.body));\n  next();\n});\n\napp.set('view engine', 'ejs');\n\n// http://expressjs.com/en/starter/basic-routing.html \napp.get(\"/\", function (request, response) {\n  //response.sendFile(__dirname + '/views/index.html');\n  response.render('index', {\n    initialMarkup: _server2.default.renderToString(_react2.default.createElement(_App2.default, null))\n  });\n});\n\napp.use('/api', _api2.default);\napp.use(_express2.default.static('public'));\n\n// listen for requests :)\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJqc29uIiwidXJsZW5jb2RlZCIsImV4dGVuZGVkIiwicmVxIiwicmVzIiwibmV4dCIsImNvbnNvbGUiLCJsb2ciLCJtZXRob2QiLCJ1cmwiLCJKU09OIiwic3RyaW5naWZ5IiwiYm9keSIsInNldCIsImdldCIsInJlcXVlc3QiLCJyZXNwb25zZSIsInJlbmRlciIsImluaXRpYWxNYXJrdXAiLCJyZW5kZXJUb1N0cmluZyIsInN0YXRpYyIsImxpc3RlbmVyIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiLCJhZGRyZXNzIiwicG9ydCJdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7OztBQVBBO0FBU0EsSUFBTUEsTUFBTSx3QkFBWjs7QUFFQUEsSUFBSUMsR0FBSixDQUFRLHFCQUFXQyxJQUFYLEVBQVI7QUFDQUYsSUFBSUMsR0FBSixDQUFRLHFCQUFXRSxVQUFYLENBQXNCLEVBQUVDLFVBQVUsS0FBWixFQUF0QixDQUFSOztBQUVBSixJQUFJQyxHQUFKLENBQVEsVUFBQ0ksR0FBRCxFQUFNQyxHQUFOLEVBQVdDLElBQVgsRUFBb0I7QUFDMUJDLFVBQVFDLEdBQVIsQ0FDS0osSUFBSUssTUFEVCx1QkFDZ0NMLElBQUlNLEdBRHBDLGFBQzhDQyxLQUFLQyxTQUFMLENBQWVSLElBQUlTLElBQW5CLENBRDlDO0FBR0FQO0FBQ0QsQ0FMRDs7QUFPQVAsSUFBSWUsR0FBSixDQUFRLGFBQVIsRUFBdUIsS0FBdkI7O0FBRUE7QUFDQWYsSUFBSWdCLEdBQUosQ0FBUSxHQUFSLEVBQWEsVUFBVUMsT0FBVixFQUFtQkMsUUFBbkIsRUFBNkI7QUFDeEM7QUFDQUEsV0FBU0MsTUFBVCxDQUFnQixPQUFoQixFQUF5QjtBQUN2QkMsbUJBQWUsaUJBQWVDLGNBQWYsQ0FBOEIsa0RBQTlCO0FBRFEsR0FBekI7QUFHRCxDQUxEOztBQU9BckIsSUFBSUMsR0FBSixDQUFRLE1BQVI7QUFDQUQsSUFBSUMsR0FBSixDQUFRLGtCQUFRcUIsTUFBUixDQUFlLFFBQWYsQ0FBUjs7QUFFQTtBQUNBLElBQUlDLFdBQVd2QixJQUFJd0IsTUFBSixDQUFXQyxRQUFRQyxHQUFSLENBQVlDLElBQXZCLEVBQTZCLFlBQVk7QUFDdERuQixVQUFRQyxHQUFSLENBQVksbUNBQW1DYyxTQUFTSyxPQUFULEdBQW1CQyxJQUFsRTtBQUNELENBRmMsQ0FBZiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbIi8vIHNlcnZlci5qcyB3aGVyZSB5b3VyIG5vZGUgYXBwIHN0YXJ0c1xuaW1wb3J0IGV4cHJlc3MgZnJvbSAnZXhwcmVzcyc7XG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IFJlYWN0RE9NU2VydmVyIGZyb20gJ3JlYWN0LWRvbS9zZXJ2ZXInO1xuaW1wb3J0IGJvZHlQYXJzZXIgZnJvbSAnYm9keS1wYXJzZXInO1xuaW1wb3J0IGFwaVJvdXRlciBmcm9tICcuL2FwaSc7XG5cbmltcG9ydCBBcHAgZnJvbSAnLi9zcmMvY29tcG9uZW50cy9BcHAnO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5cbmFwcC51c2UoYm9keVBhcnNlci5qc29uKCkpO1xuYXBwLnVzZShib2R5UGFyc2VyLnVybGVuY29kZWQoeyBleHRlbmRlZDogZmFsc2UgfSkpO1xuXG5hcHAudXNlKChyZXEsIHJlcywgbmV4dCkgPT4ge1xuICBjb25zb2xlLmxvZyhcbiAgICBgJHtyZXEubWV0aG9kfSByZXF1ZXN0IGZvciAnJHtyZXEudXJsfScgLSAke0pTT04uc3RyaW5naWZ5KHJlcS5ib2R5KX1gXG4gICk7XG4gIG5leHQoKTtcbn0pO1xuXG5hcHAuc2V0KCd2aWV3IGVuZ2luZScsICdlanMnKTtcblxuLy8gaHR0cDovL2V4cHJlc3Nqcy5jb20vZW4vc3RhcnRlci9iYXNpYy1yb3V0aW5nLmh0bWwgXG5hcHAuZ2V0KFwiL1wiLCBmdW5jdGlvbiAocmVxdWVzdCwgcmVzcG9uc2UpIHtcbiAgLy9yZXNwb25zZS5zZW5kRmlsZShfX2Rpcm5hbWUgKyAnL3ZpZXdzL2luZGV4Lmh0bWwnKTtcbiAgcmVzcG9uc2UucmVuZGVyKCdpbmRleCcsIHtcbiAgICBpbml0aWFsTWFya3VwOiBSZWFjdERPTVNlcnZlci5yZW5kZXJUb1N0cmluZyg8QXBwLz4pXG4gIH0pO1xufSk7XG5cbmFwcC51c2UoJy9hcGknLCBhcGlSb3V0ZXIpO1xuYXBwLnVzZShleHByZXNzLnN0YXRpYygncHVibGljJykpO1xuXG4vLyBsaXN0ZW4gZm9yIHJlcXVlc3RzIDopXG52YXIgbGlzdGVuZXIgPSBhcHAubGlzdGVuKHByb2Nlc3MuZW52LlBPUlQsIGZ1bmN0aW9uICgpIHtcbiAgY29uc29sZS5sb2coJ1lvdXIgYXBwIGlzIGxpc3RlbmluZyBvbiBwb3J0ICcgKyBsaXN0ZW5lci5hZGRyZXNzKCkucG9ydCk7XG59KTtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "app",
+        "use",
+        "json",
+        "urlencoded",
+        "extended",
+        "req",
+        "res",
+        "next",
+        "console",
+        "log",
+        "method",
+        "url",
+        "JSON",
+        "stringify",
+        "body",
+        "set",
+        "get",
+        "request",
+        "response",
+        "render",
+        "initialMarkup",
+        "renderToString",
+        "static",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "address",
+        "port"
+      ],
+      "mappings": ";;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AAEA;;;;;;AAPA;AASA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,qBAAWC,IAAX,EAAR;AACAF,IAAIC,GAAJ,CAAQ,qBAAWE,UAAX,CAAsB,EAAEC,UAAU,KAAZ,EAAtB,CAAR;;AAEAJ,IAAIC,GAAJ,CAAQ,UAACI,GAAD,EAAMC,GAAN,EAAWC,IAAX,EAAoB;AAC1BC,UAAQC,GAAR,CACKJ,IAAIK,MADT,uBACgCL,IAAIM,GADpC,aAC8CC,KAAKC,SAAL,CAAeR,IAAIS,IAAnB,CAD9C;AAGAP;AACD,CALD;;AAOAP,IAAIe,GAAJ,CAAQ,aAAR,EAAuB,KAAvB;;AAEA;AACAf,IAAIgB,GAAJ,CAAQ,GAAR,EAAa,UAAUC,OAAV,EAAmBC,QAAnB,EAA6B;AACxC;AACAA,WAASC,MAAT,CAAgB,OAAhB,EAAyB;AACvBC,mBAAe,iBAAeC,cAAf,CAA8B,kDAA9B;AADQ,GAAzB;AAGD,CALD;;AAOArB,IAAIC,GAAJ,CAAQ,MAAR;AACAD,IAAIC,GAAJ,CAAQ,kBAAQqB,MAAR,CAAe,QAAf,CAAR;;AAEA;AACA,IAAIC,WAAWvB,IAAIwB,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAY;AACtDnB,UAAQC,GAAR,CAAY,mCAAmCc,SAASK,OAAT,GAAmBC,IAAlE;AACD,CAFc,CAAf",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "// server.js where your node app starts\nimport express from 'express';\nimport React from 'react';\nimport ReactDOMServer from 'react-dom/server';\nimport bodyParser from 'body-parser';\nimport apiRouter from './api';\n\nimport App from './src/components/App';\n\nconst app = express();\n\napp.use(bodyParser.json());\napp.use(bodyParser.urlencoded({ extended: false }));\n\napp.use((req, res, next) => {\n  console.log(\n    `${req.method} request for '${req.url}' - ${JSON.stringify(req.body)}`\n  );\n  next();\n});\n\napp.set('view engine', 'ejs');\n\n// http://expressjs.com/en/starter/basic-routing.html \napp.get(\"/\", function (request, response) {\n  //response.sendFile(__dirname + '/views/index.html');\n  response.render('index', {\n    initialMarkup: ReactDOMServer.renderToString(<App/>)\n  });\n});\n\napp.use('/api', apiRouter);\napp.use(express.static('public'));\n\n// listen for requests :)\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n"
+      ]
+    },
+    "mtime": 1509516837418
+  },
+  "{\"filename\":\"/app/api/index.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/api\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "toConsumableArray",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "./schema",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Poll"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/api/index.js",
+      "filenameRelative": "/app/api/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/app/api",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/api",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _schema = require('./schema');\n\nvar _schema2 = _interopRequireDefault(_schema);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }\n\nvar router = _express2.default.Router();\n\nrouter.get('/population', function (req, res) {\n  var data = [{ age: \"<5\", population: 2704659 }, { age: \"5-13\", population: 4499890 }, { age: \"14-17\", population: 2159981 }, { age: \"18-24\", population: 3853788 }, { age: \"25-44\", population: 14106543 }, { age: \"45-64\", population: 8819342 }];\n  res.json(data);\n});\n\nrouter.get('/poll/:id', function (req, res) {\n  console.log('req.params =', req.params);\n  _schema2.default.findOne({ _id: req.params.id }, function (err, doc) {\n    if (err) {\n      res.send(err.message);\n      return;\n    }\n    if (doc) {\n      res.json(doc.dataPoints);\n    }\n  });\n});\n\nrouter.post('/newpoll', function (req, res) {\n  var title = req.body.question.replace(/\\s+/g, ' ');\n\n  var choiceArr = req.body.choices.split(',');\n  choiceArr = choiceArr.map(function (choice) {\n    return choice.trim().replace(/\\s+/g, ' ').toLowerCase();\n  });\n  choiceArr = [].concat(_toConsumableArray(new Set(choiceArr)));\n  var dataPoints = choiceArr.map(function (choice) {\n    return { label: choice, value: 0 };\n  });\n\n  var newPoll = new _schema2.default({ title: title, dataPoints: dataPoints });\n  newPoll.save(function (err, savedPoll) {\n    if (err) {\n      console.log('Not saved');\n      res.send(err.message);\n      return;\n    }\n    res.json(savedPoll);\n    console.log('Poll saved');\n  });\n});\n\nrouter.post('/vote/:id', function (req, res) {\n  console.log('req.body =', req.body);\n  console.log('req.params =', req.params);\n  _schema2.default.update({ \"dataPoints._id\": req.params.id }, { '$inc': { 'dataPoints.$.value': 1 } }, function (err, doc) {\n    if (err) res.send(err.message);\n    if (doc) res.json(doc);\n  });\n});\n\nexports.default = router;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbInJvdXRlciIsIlJvdXRlciIsImdldCIsInJlcSIsInJlcyIsImRhdGEiLCJhZ2UiLCJwb3B1bGF0aW9uIiwianNvbiIsImNvbnNvbGUiLCJsb2ciLCJwYXJhbXMiLCJmaW5kT25lIiwiX2lkIiwiaWQiLCJlcnIiLCJkb2MiLCJzZW5kIiwibWVzc2FnZSIsImRhdGFQb2ludHMiLCJwb3N0IiwidGl0bGUiLCJib2R5IiwicXVlc3Rpb24iLCJyZXBsYWNlIiwiY2hvaWNlQXJyIiwiY2hvaWNlcyIsInNwbGl0IiwibWFwIiwiY2hvaWNlIiwidHJpbSIsInRvTG93ZXJDYXNlIiwiU2V0IiwibGFiZWwiLCJ2YWx1ZSIsIm5ld1BvbGwiLCJzYXZlIiwic2F2ZWRQb2xsIiwidXBkYXRlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTs7OztBQUNBOzs7Ozs7OztBQUVBLElBQU1BLFNBQVMsa0JBQVFDLE1BQVIsRUFBZjs7QUFFQUQsT0FBT0UsR0FBUCxDQUFXLGFBQVgsRUFBMEIsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOLEVBQWM7QUFDdEMsTUFBTUMsT0FBTyxDQUNYLEVBQUNDLEtBQUssSUFBTixFQUFZQyxZQUFZLE9BQXhCLEVBRFcsRUFFWCxFQUFDRCxLQUFLLE1BQU4sRUFBY0MsWUFBWSxPQUExQixFQUZXLEVBR1gsRUFBQ0QsS0FBSyxPQUFOLEVBQWVDLFlBQVksT0FBM0IsRUFIVyxFQUlYLEVBQUNELEtBQUssT0FBTixFQUFlQyxZQUFZLE9BQTNCLEVBSlcsRUFLWCxFQUFDRCxLQUFLLE9BQU4sRUFBZUMsWUFBWSxRQUEzQixFQUxXLEVBTVgsRUFBQ0QsS0FBSyxPQUFOLEVBQWVDLFlBQVksT0FBM0IsRUFOVyxDQUFiO0FBUUFILE1BQUlJLElBQUosQ0FBU0gsSUFBVDtBQUNELENBVkQ7O0FBWUFMLE9BQU9FLEdBQVAsQ0FBVyxXQUFYLEVBQXdCLFVBQUNDLEdBQUQsRUFBTUMsR0FBTixFQUFjO0FBQ3BDSyxVQUFRQyxHQUFSLENBQVksY0FBWixFQUE0QlAsSUFBSVEsTUFBaEM7QUFDQSxtQkFBS0MsT0FBTCxDQUFhLEVBQUVDLEtBQUtWLElBQUlRLE1BQUosQ0FBV0csRUFBbEIsRUFBYixFQUFxQyxVQUFDQyxHQUFELEVBQU1DLEdBQU4sRUFBYztBQUNqRCxRQUFJRCxHQUFKLEVBQVM7QUFDUFgsVUFBSWEsSUFBSixDQUFTRixJQUFJRyxPQUFiO0FBQ0E7QUFDRDtBQUNELFFBQUlGLEdBQUosRUFBUztBQUNQWixVQUFJSSxJQUFKLENBQVNRLElBQUlHLFVBQWI7QUFDRDtBQUNGLEdBUkQ7QUFTRCxDQVhEOztBQWFBbkIsT0FBT29CLElBQVAsQ0FBWSxVQUFaLEVBQXdCLFVBQUNqQixHQUFELEVBQU1DLEdBQU4sRUFBYztBQUNwQyxNQUFNaUIsUUFBUWxCLElBQUltQixJQUFKLENBQVNDLFFBQVQsQ0FBa0JDLE9BQWxCLENBQTBCLE1BQTFCLEVBQWtDLEdBQWxDLENBQWQ7O0FBRUEsTUFBSUMsWUFBWXRCLElBQUltQixJQUFKLENBQVNJLE9BQVQsQ0FBaUJDLEtBQWpCLENBQXVCLEdBQXZCLENBQWhCO0FBQ0FGLGNBQVlBLFVBQVVHLEdBQVYsQ0FBYztBQUFBLFdBQVVDLE9BQU9DLElBQVAsR0FBY04sT0FBZCxDQUFzQixNQUF0QixFQUE4QixHQUE5QixFQUFtQ08sV0FBbkMsRUFBVjtBQUFBLEdBQWQsQ0FBWjtBQUNBTiwyQ0FBaUIsSUFBSU8sR0FBSixDQUFRUCxTQUFSLENBQWpCO0FBQ0EsTUFBTU4sYUFBYU0sVUFBVUcsR0FBVixDQUFjO0FBQUEsV0FBVyxFQUFDSyxPQUFPSixNQUFSLEVBQWdCSyxPQUFPLENBQXZCLEVBQVg7QUFBQSxHQUFkLENBQW5COztBQUVBLE1BQU1DLFVBQVUscUJBQVMsRUFBRWQsWUFBRixFQUFTRixzQkFBVCxFQUFULENBQWhCO0FBQ0FnQixVQUFRQyxJQUFSLENBQWEsVUFBU3JCLEdBQVQsRUFBY3NCLFNBQWQsRUFBeUI7QUFDcEMsUUFBSXRCLEdBQUosRUFBUztBQUNQTixjQUFRQyxHQUFSLENBQVksV0FBWjtBQUNBTixVQUFJYSxJQUFKLENBQVNGLElBQUlHLE9BQWI7QUFDQTtBQUNEO0FBQ0RkLFFBQUlJLElBQUosQ0FBUzZCLFNBQVQ7QUFDQTVCLFlBQVFDLEdBQVIsQ0FBWSxZQUFaO0FBQ0QsR0FSRDtBQVNELENBbEJEOztBQW9CQVYsT0FBT29CLElBQVAsQ0FBWSxXQUFaLEVBQXlCLFVBQUNqQixHQUFELEVBQU1DLEdBQU4sRUFBYztBQUNyQ0ssVUFBUUMsR0FBUixDQUFZLFlBQVosRUFBMEJQLElBQUltQixJQUE5QjtBQUNBYixVQUFRQyxHQUFSLENBQVksY0FBWixFQUE0QlAsSUFBSVEsTUFBaEM7QUFDQSxtQkFBSzJCLE1BQUwsQ0FBWSxFQUFFLGtCQUFrQm5DLElBQUlRLE1BQUosQ0FBV0csRUFBL0IsRUFBWixFQUFpRCxFQUFDLFFBQVEsRUFBQyxzQkFBc0IsQ0FBdkIsRUFBVCxFQUFqRCxFQUFzRixVQUFDQyxHQUFELEVBQU1DLEdBQU4sRUFBYztBQUNsRyxRQUFJRCxHQUFKLEVBQVNYLElBQUlhLElBQUosQ0FBU0YsSUFBSUcsT0FBYjtBQUNULFFBQUlGLEdBQUosRUFBU1osSUFBSUksSUFBSixDQUFTUSxHQUFUO0FBQ1YsR0FIRDtBQUlELENBUEQ7O2tCQVNlaEIsTSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2FwaSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xuaW1wb3J0IFBvbGwgZnJvbSAnLi9zY2hlbWEnO1xuXG5jb25zdCByb3V0ZXIgPSBleHByZXNzLlJvdXRlcigpO1xuXG5yb3V0ZXIuZ2V0KCcvcG9wdWxhdGlvbicsIChyZXEsIHJlcykgPT4ge1xuICBjb25zdCBkYXRhID0gW1xuICAgIHthZ2U6IFwiPDVcIiwgcG9wdWxhdGlvbjogMjcwNDY1OX0sXG4gICAge2FnZTogXCI1LTEzXCIsIHBvcHVsYXRpb246IDQ0OTk4OTB9LFxuICAgIHthZ2U6IFwiMTQtMTdcIiwgcG9wdWxhdGlvbjogMjE1OTk4MX0sXG4gICAge2FnZTogXCIxOC0yNFwiLCBwb3B1bGF0aW9uOiAzODUzNzg4fSxcbiAgICB7YWdlOiBcIjI1LTQ0XCIsIHBvcHVsYXRpb246IDE0MTA2NTQzfSxcbiAgICB7YWdlOiBcIjQ1LTY0XCIsIHBvcHVsYXRpb246IDg4MTkzNDJ9XG4gIF07XG4gIHJlcy5qc29uKGRhdGEpO1xufSk7XG5cbnJvdXRlci5nZXQoJy9wb2xsLzppZCcsIChyZXEsIHJlcykgPT4ge1xuICBjb25zb2xlLmxvZygncmVxLnBhcmFtcyA9JywgcmVxLnBhcmFtcyk7XG4gIFBvbGwuZmluZE9uZSh7IF9pZDogcmVxLnBhcmFtcy5pZCB9LCAoZXJyLCBkb2MpID0+IHtcbiAgICBpZiAoZXJyKSB7XG4gICAgICByZXMuc2VuZChlcnIubWVzc2FnZSk7XG4gICAgICByZXR1cm47XG4gICAgfVxuICAgIGlmIChkb2MpIHtcbiAgICAgIHJlcy5qc29uKGRvYy5kYXRhUG9pbnRzKTtcbiAgICB9XG4gIH0pO1xufSk7XG5cbnJvdXRlci5wb3N0KCcvbmV3cG9sbCcsIChyZXEsIHJlcykgPT4ge1xuICBjb25zdCB0aXRsZSA9IHJlcS5ib2R5LnF1ZXN0aW9uLnJlcGxhY2UoL1xccysvZywgJyAnKTtcbiAgXG4gIGxldCBjaG9pY2VBcnIgPSByZXEuYm9keS5jaG9pY2VzLnNwbGl0KCcsJyk7XG4gIGNob2ljZUFyciA9IGNob2ljZUFyci5tYXAoY2hvaWNlID0+IGNob2ljZS50cmltKCkucmVwbGFjZSgvXFxzKy9nLCAnICcpLnRvTG93ZXJDYXNlKCkpO1xuICBjaG9pY2VBcnIgPSBbIC4uLm5ldyBTZXQoY2hvaWNlQXJyKSBdO1xuICBjb25zdCBkYXRhUG9pbnRzID0gY2hvaWNlQXJyLm1hcChjaG9pY2UgPT4gKHtsYWJlbDogY2hvaWNlLCB2YWx1ZTogMH0pKTtcbiAgXG4gIGNvbnN0IG5ld1BvbGwgPSBuZXcgUG9sbCh7IHRpdGxlLCBkYXRhUG9pbnRzIH0pO1xuICBuZXdQb2xsLnNhdmUoZnVuY3Rpb24oZXJyLCBzYXZlZFBvbGwpIHtcbiAgICBpZiAoZXJyKSB7XG4gICAgICBjb25zb2xlLmxvZygnTm90IHNhdmVkJyk7XG4gICAgICByZXMuc2VuZChlcnIubWVzc2FnZSk7XG4gICAgICByZXR1cm47XG4gICAgfVxuICAgIHJlcy5qc29uKHNhdmVkUG9sbCk7XG4gICAgY29uc29sZS5sb2coJ1BvbGwgc2F2ZWQnKTtcbiAgfSk7XG59KTtcblxucm91dGVyLnBvc3QoJy92b3RlLzppZCcsIChyZXEsIHJlcykgPT4ge1xuICBjb25zb2xlLmxvZygncmVxLmJvZHkgPScsIHJlcS5ib2R5KTtcbiAgY29uc29sZS5sb2coJ3JlcS5wYXJhbXMgPScsIHJlcS5wYXJhbXMpO1xuICBQb2xsLnVwZGF0ZSh7IFwiZGF0YVBvaW50cy5faWRcIjogcmVxLnBhcmFtcy5pZCB9LCB7JyRpbmMnOiB7J2RhdGFQb2ludHMuJC52YWx1ZSc6IDF9fSwgKGVyciwgZG9jKSA9PiB7XG4gICAgaWYgKGVycikgcmVzLnNlbmQoZXJyLm1lc3NhZ2UpO1xuICAgIGlmIChkb2MpIHJlcy5qc29uKGRvYyk7XG4gIH0pO1xufSk7XG5cbmV4cG9ydCBkZWZhdWx0IHJvdXRlcjtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "router",
+        "Router",
+        "get",
+        "req",
+        "res",
+        "data",
+        "age",
+        "population",
+        "json",
+        "console",
+        "log",
+        "params",
+        "findOne",
+        "_id",
+        "id",
+        "err",
+        "doc",
+        "send",
+        "message",
+        "dataPoints",
+        "post",
+        "title",
+        "body",
+        "question",
+        "replace",
+        "choiceArr",
+        "choices",
+        "split",
+        "map",
+        "choice",
+        "trim",
+        "toLowerCase",
+        "Set",
+        "label",
+        "value",
+        "newPoll",
+        "save",
+        "savedPoll",
+        "update"
+      ],
+      "mappings": ";;;;;;AAAA;;;;AACA;;;;;;;;AAEA,IAAMA,SAAS,kBAAQC,MAAR,EAAf;;AAEAD,OAAOE,GAAP,CAAW,aAAX,EAA0B,UAACC,GAAD,EAAMC,GAAN,EAAc;AACtC,MAAMC,OAAO,CACX,EAACC,KAAK,IAAN,EAAYC,YAAY,OAAxB,EADW,EAEX,EAACD,KAAK,MAAN,EAAcC,YAAY,OAA1B,EAFW,EAGX,EAACD,KAAK,OAAN,EAAeC,YAAY,OAA3B,EAHW,EAIX,EAACD,KAAK,OAAN,EAAeC,YAAY,OAA3B,EAJW,EAKX,EAACD,KAAK,OAAN,EAAeC,YAAY,QAA3B,EALW,EAMX,EAACD,KAAK,OAAN,EAAeC,YAAY,OAA3B,EANW,CAAb;AAQAH,MAAII,IAAJ,CAASH,IAAT;AACD,CAVD;;AAYAL,OAAOE,GAAP,CAAW,WAAX,EAAwB,UAACC,GAAD,EAAMC,GAAN,EAAc;AACpCK,UAAQC,GAAR,CAAY,cAAZ,EAA4BP,IAAIQ,MAAhC;AACA,mBAAKC,OAAL,CAAa,EAAEC,KAAKV,IAAIQ,MAAJ,CAAWG,EAAlB,EAAb,EAAqC,UAACC,GAAD,EAAMC,GAAN,EAAc;AACjD,QAAID,GAAJ,EAAS;AACPX,UAAIa,IAAJ,CAASF,IAAIG,OAAb;AACA;AACD;AACD,QAAIF,GAAJ,EAAS;AACPZ,UAAII,IAAJ,CAASQ,IAAIG,UAAb;AACD;AACF,GARD;AASD,CAXD;;AAaAnB,OAAOoB,IAAP,CAAY,UAAZ,EAAwB,UAACjB,GAAD,EAAMC,GAAN,EAAc;AACpC,MAAMiB,QAAQlB,IAAImB,IAAJ,CAASC,QAAT,CAAkBC,OAAlB,CAA0B,MAA1B,EAAkC,GAAlC,CAAd;;AAEA,MAAIC,YAAYtB,IAAImB,IAAJ,CAASI,OAAT,CAAiBC,KAAjB,CAAuB,GAAvB,CAAhB;AACAF,cAAYA,UAAUG,GAAV,CAAc;AAAA,WAAUC,OAAOC,IAAP,GAAcN,OAAd,CAAsB,MAAtB,EAA8B,GAA9B,EAAmCO,WAAnC,EAAV;AAAA,GAAd,CAAZ;AACAN,2CAAiB,IAAIO,GAAJ,CAAQP,SAAR,CAAjB;AACA,MAAMN,aAAaM,UAAUG,GAAV,CAAc;AAAA,WAAW,EAACK,OAAOJ,MAAR,EAAgBK,OAAO,CAAvB,EAAX;AAAA,GAAd,CAAnB;;AAEA,MAAMC,UAAU,qBAAS,EAAEd,YAAF,EAASF,sBAAT,EAAT,CAAhB;AACAgB,UAAQC,IAAR,CAAa,UAASrB,GAAT,EAAcsB,SAAd,EAAyB;AACpC,QAAItB,GAAJ,EAAS;AACPN,cAAQC,GAAR,CAAY,WAAZ;AACAN,UAAIa,IAAJ,CAASF,IAAIG,OAAb;AACA;AACD;AACDd,QAAII,IAAJ,CAAS6B,SAAT;AACA5B,YAAQC,GAAR,CAAY,YAAZ;AACD,GARD;AASD,CAlBD;;AAoBAV,OAAOoB,IAAP,CAAY,WAAZ,EAAyB,UAACjB,GAAD,EAAMC,GAAN,EAAc;AACrCK,UAAQC,GAAR,CAAY,YAAZ,EAA0BP,IAAImB,IAA9B;AACAb,UAAQC,GAAR,CAAY,cAAZ,EAA4BP,IAAIQ,MAAhC;AACA,mBAAK2B,MAAL,CAAY,EAAE,kBAAkBnC,IAAIQ,MAAJ,CAAWG,EAA/B,EAAZ,EAAiD,EAAC,QAAQ,EAAC,sBAAsB,CAAvB,EAAT,EAAjD,EAAsF,UAACC,GAAD,EAAMC,GAAN,EAAc;AAClG,QAAID,GAAJ,EAASX,IAAIa,IAAJ,CAASF,IAAIG,OAAb;AACT,QAAIF,GAAJ,EAASZ,IAAII,IAAJ,CAASQ,GAAT;AACV,GAHD;AAID,CAPD;;kBASehB,M",
+      "file": "index.js",
+      "sourceRoot": "/app/api",
+      "sourcesContent": [
+        "import express from 'express';\nimport Poll from './schema';\n\nconst router = express.Router();\n\nrouter.get('/population', (req, res) => {\n  const data = [\n    {age: \"<5\", population: 2704659},\n    {age: \"5-13\", population: 4499890},\n    {age: \"14-17\", population: 2159981},\n    {age: \"18-24\", population: 3853788},\n    {age: \"25-44\", population: 14106543},\n    {age: \"45-64\", population: 8819342}\n  ];\n  res.json(data);\n});\n\nrouter.get('/poll/:id', (req, res) => {\n  console.log('req.params =', req.params);\n  Poll.findOne({ _id: req.params.id }, (err, doc) => {\n    if (err) {\n      res.send(err.message);\n      return;\n    }\n    if (doc) {\n      res.json(doc.dataPoints);\n    }\n  });\n});\n\nrouter.post('/newpoll', (req, res) => {\n  const title = req.body.question.replace(/\\s+/g, ' ');\n  \n  let choiceArr = req.body.choices.split(',');\n  choiceArr = choiceArr.map(choice => choice.trim().replace(/\\s+/g, ' ').toLowerCase());\n  choiceArr = [ ...new Set(choiceArr) ];\n  const dataPoints = choiceArr.map(choice => ({label: choice, value: 0}));\n  \n  const newPoll = new Poll({ title, dataPoints });\n  newPoll.save(function(err, savedPoll) {\n    if (err) {\n      console.log('Not saved');\n      res.send(err.message);\n      return;\n    }\n    res.json(savedPoll);\n    console.log('Poll saved');\n  });\n});\n\nrouter.post('/vote/:id', (req, res) => {\n  console.log('req.body =', req.body);\n  console.log('req.params =', req.params);\n  Poll.update({ \"dataPoints._id\": req.params.id }, {'$inc': {'dataPoints.$.value': 1}}, (err, doc) => {\n    if (err) res.send(err.message);\n    if (doc) res.json(doc);\n  });\n});\n\nexport default router;\n"
+      ]
+    },
+    "mtime": 1509523343055
+  },
+  "{\"filename\":\"/app/api/schema.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/api\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/api/schema.js",
+      "filenameRelative": "/app/api/schema.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "schema.js",
+      "sourceFileName": "schema.js",
+      "sourceRoot": "/app/api",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/api",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "schema"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _mongoose = require(\"mongoose\");\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_mongoose2.default.Promise = global.Promise;\n_mongoose2.default.connect(process.env.MLAB_URI, { useMongoClient: true });\nvar db = _mongoose2.default.connection;\ndb.on(\"error\", console.error.bind(console, \"connection error:\"));\n\nvar dataPointsSchema = _mongoose2.default.Schema({\n  label: {\n    type: String,\n    required: true,\n    maxlength: [20, 'Label too long.']\n  },\n  value: {\n    type: Number,\n    required: true,\n    min: [0, 'Negative value.']\n  }\n});\n\nvar pollSchema = _mongoose2.default.Schema({\n  title: {\n    type: String,\n    trim: true,\n    lowercase: true,\n    index: true,\n    unique: true,\n    required: true,\n    maxlength: [100, 'Title too long.']\n  },\n  dataPoints: [dataPointsSchema]\n});\n\nexports.default = _mongoose2.default.model(\"Poll\", pollSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjaGVtYS5qcyJdLCJuYW1lcyI6WyJQcm9taXNlIiwiZ2xvYmFsIiwiY29ubmVjdCIsInByb2Nlc3MiLCJlbnYiLCJNTEFCX1VSSSIsInVzZU1vbmdvQ2xpZW50IiwiZGIiLCJjb25uZWN0aW9uIiwib24iLCJjb25zb2xlIiwiZXJyb3IiLCJiaW5kIiwiZGF0YVBvaW50c1NjaGVtYSIsIlNjaGVtYSIsImxhYmVsIiwidHlwZSIsIlN0cmluZyIsInJlcXVpcmVkIiwibWF4bGVuZ3RoIiwidmFsdWUiLCJOdW1iZXIiLCJtaW4iLCJwb2xsU2NoZW1hIiwidGl0bGUiLCJ0cmltIiwibG93ZXJjYXNlIiwiaW5kZXgiLCJ1bmlxdWUiLCJkYXRhUG9pbnRzIiwibW9kZWwiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBOzs7Ozs7QUFFQSxtQkFBU0EsT0FBVCxHQUFtQkMsT0FBT0QsT0FBMUI7QUFDQSxtQkFBU0UsT0FBVCxDQUFpQkMsUUFBUUMsR0FBUixDQUFZQyxRQUE3QixFQUF1QyxFQUFFQyxnQkFBZ0IsSUFBbEIsRUFBdkM7QUFDQSxJQUFNQyxLQUFLLG1CQUFTQyxVQUFwQjtBQUNBRCxHQUFHRSxFQUFILENBQU0sT0FBTixFQUFlQyxRQUFRQyxLQUFSLENBQWNDLElBQWQsQ0FBbUJGLE9BQW5CLEVBQTRCLG1CQUE1QixDQUFmOztBQUVBLElBQU1HLG1CQUFtQixtQkFBU0MsTUFBVCxDQUFnQjtBQUN2Q0MsU0FBTztBQUNMQyxVQUFNQyxNQUREO0FBRUxDLGNBQVUsSUFGTDtBQUdMQyxlQUFXLENBQUMsRUFBRCxFQUFLLGlCQUFMO0FBSE4sR0FEZ0M7QUFNdkNDLFNBQU87QUFDTEosVUFBTUssTUFERDtBQUVMSCxjQUFVLElBRkw7QUFHTEksU0FBSyxDQUFDLENBQUQsRUFBSSxpQkFBSjtBQUhBO0FBTmdDLENBQWhCLENBQXpCOztBQWFBLElBQU1DLGFBQWEsbUJBQVNULE1BQVQsQ0FBZ0I7QUFDakNVLFNBQU87QUFDTFIsVUFBTUMsTUFERDtBQUVMUSxVQUFNLElBRkQ7QUFHTEMsZUFBVyxJQUhOO0FBSUxDLFdBQU8sSUFKRjtBQUtMQyxZQUFRLElBTEg7QUFNTFYsY0FBVSxJQU5MO0FBT0xDLGVBQVcsQ0FBQyxHQUFELEVBQU0saUJBQU47QUFQTixHQUQwQjtBQVVqQ1UsY0FBWSxDQUFDaEIsZ0JBQUQ7QUFWcUIsQ0FBaEIsQ0FBbkI7O2tCQWFlLG1CQUFTaUIsS0FBVCxDQUFlLE1BQWYsRUFBdUJQLFVBQXZCLEMiLCJmaWxlIjoic2NoZW1hLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvYXBpIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vbmdvb3NlIGZyb20gJ21vbmdvb3NlJztcblxubW9uZ29vc2UuUHJvbWlzZSA9IGdsb2JhbC5Qcm9taXNlO1xubW9uZ29vc2UuY29ubmVjdChwcm9jZXNzLmVudi5NTEFCX1VSSSwgeyB1c2VNb25nb0NsaWVudDogdHJ1ZSB9KTtcbmNvbnN0IGRiID0gbW9uZ29vc2UuY29ubmVjdGlvbjtcbmRiLm9uKFwiZXJyb3JcIiwgY29uc29sZS5lcnJvci5iaW5kKGNvbnNvbGUsIFwiY29ubmVjdGlvbiBlcnJvcjpcIikpO1xuXG5jb25zdCBkYXRhUG9pbnRzU2NoZW1hID0gbW9uZ29vc2UuU2NoZW1hKHtcbiAgbGFiZWw6IHtcbiAgICB0eXBlOiBTdHJpbmcsXG4gICAgcmVxdWlyZWQ6IHRydWUsXG4gICAgbWF4bGVuZ3RoOiBbMjAsICdMYWJlbCB0b28gbG9uZy4nXVxuICB9LFxuICB2YWx1ZToge1xuICAgIHR5cGU6IE51bWJlcixcbiAgICByZXF1aXJlZDogdHJ1ZSxcbiAgICBtaW46IFswLCAnTmVnYXRpdmUgdmFsdWUuJ11cbiAgfVxufSk7XG5cbmNvbnN0IHBvbGxTY2hlbWEgPSBtb25nb29zZS5TY2hlbWEoe1xuICB0aXRsZToge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICB0cmltOiB0cnVlLFxuICAgIGxvd2VyY2FzZTogdHJ1ZSxcbiAgICBpbmRleDogdHJ1ZSxcbiAgICB1bmlxdWU6IHRydWUsXG4gICAgcmVxdWlyZWQ6IHRydWUsXG4gICAgbWF4bGVuZ3RoOiBbMTAwLCAnVGl0bGUgdG9vIGxvbmcuJ11cbiAgfSwgXG4gIGRhdGFQb2ludHM6IFtkYXRhUG9pbnRzU2NoZW1hXVxufSk7XG5cbmV4cG9ydCBkZWZhdWx0IG1vbmdvb3NlLm1vZGVsKFwiUG9sbFwiLCBwb2xsU2NoZW1hKTsiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "schema.js"
+      ],
+      "names": [
+        "Promise",
+        "global",
+        "connect",
+        "process",
+        "env",
+        "MLAB_URI",
+        "useMongoClient",
+        "db",
+        "connection",
+        "on",
+        "console",
+        "error",
+        "bind",
+        "dataPointsSchema",
+        "Schema",
+        "label",
+        "type",
+        "String",
+        "required",
+        "maxlength",
+        "value",
+        "Number",
+        "min",
+        "pollSchema",
+        "title",
+        "trim",
+        "lowercase",
+        "index",
+        "unique",
+        "dataPoints",
+        "model"
+      ],
+      "mappings": ";;;;;;AAAA;;;;;;AAEA,mBAASA,OAAT,GAAmBC,OAAOD,OAA1B;AACA,mBAASE,OAAT,CAAiBC,QAAQC,GAAR,CAAYC,QAA7B,EAAuC,EAAEC,gBAAgB,IAAlB,EAAvC;AACA,IAAMC,KAAK,mBAASC,UAApB;AACAD,GAAGE,EAAH,CAAM,OAAN,EAAeC,QAAQC,KAAR,CAAcC,IAAd,CAAmBF,OAAnB,EAA4B,mBAA5B,CAAf;;AAEA,IAAMG,mBAAmB,mBAASC,MAAT,CAAgB;AACvCC,SAAO;AACLC,UAAMC,MADD;AAELC,cAAU,IAFL;AAGLC,eAAW,CAAC,EAAD,EAAK,iBAAL;AAHN,GADgC;AAMvCC,SAAO;AACLJ,UAAMK,MADD;AAELH,cAAU,IAFL;AAGLI,SAAK,CAAC,CAAD,EAAI,iBAAJ;AAHA;AANgC,CAAhB,CAAzB;;AAaA,IAAMC,aAAa,mBAAST,MAAT,CAAgB;AACjCU,SAAO;AACLR,UAAMC,MADD;AAELQ,UAAM,IAFD;AAGLC,eAAW,IAHN;AAILC,WAAO,IAJF;AAKLC,YAAQ,IALH;AAMLV,cAAU,IANL;AAOLC,eAAW,CAAC,GAAD,EAAM,iBAAN;AAPN,GAD0B;AAUjCU,cAAY,CAAChB,gBAAD;AAVqB,CAAhB,CAAnB;;kBAae,mBAASiB,KAAT,CAAe,MAAf,EAAuBP,UAAvB,C",
+      "file": "schema.js",
+      "sourceRoot": "/app/api",
+      "sourcesContent": [
+        "import mongoose from 'mongoose';\n\nmongoose.Promise = global.Promise;\nmongoose.connect(process.env.MLAB_URI, { useMongoClient: true });\nconst db = mongoose.connection;\ndb.on(\"error\", console.error.bind(console, \"connection error:\"));\n\nconst dataPointsSchema = mongoose.Schema({\n  label: {\n    type: String,\n    required: true,\n    maxlength: [20, 'Label too long.']\n  },\n  value: {\n    type: Number,\n    required: true,\n    min: [0, 'Negative value.']\n  }\n});\n\nconst pollSchema = mongoose.Schema({\n  title: {\n    type: String,\n    trim: true,\n    lowercase: true,\n    index: true,\n    unique: true,\n    required: true,\n    maxlength: [100, 'Title too long.']\n  }, \n  dataPoints: [dataPointsSchema]\n});\n\nexport default mongoose.model(\"Poll\", pollSchema);"
+      ]
+    },
+    "mtime": 1509516837334
+  },
+  "{\"filename\":\"/app/src/components/App.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/components\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "inherits",
+        "possibleConstructorReturn",
+        "createClass",
+        "classCallCheck",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "react",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "React"
+              }
+            ]
+          },
+          {
+            "source": "./Svg",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Svg"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/components/App.js",
+      "filenameRelative": "/app/src/components/App.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "App.js",
+      "sourceFileName": "App.js",
+      "sourceRoot": "/app/src/components",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/components",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "App"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Svg = require('./Svg');\n\nvar _Svg2 = _interopRequireDefault(_Svg);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'App' },\n        _react2.default.createElement(_Svg2.default, null)\n      );\n    }\n  }]);\n\n  return App;\n}(_react2.default.Component);\n\nexports.default = App;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC5qcyJdLCJuYW1lcyI6WyJBcHAiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7Ozs7QUFFQTs7Ozs7Ozs7Ozs7O0lBRU1BLEc7Ozs7Ozs7Ozs7OzZCQUVLO0FBQ1AsYUFDRTtBQUFBO0FBQUEsVUFBSyxXQUFVLEtBQWY7QUFDRTtBQURGLE9BREY7QUFLRDs7OztFQVJlLGdCQUFNQyxTOztrQkFXVEQsRyIsImZpbGUiOiJBcHAuanMiLCJzb3VyY2VSb290IjoiL2FwcC9zcmMvY29tcG9uZW50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmltcG9ydCBTdmcgZnJvbSAnLi9TdmcnO1xuXG5jbGFzcyBBcHAgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJBcHBcIj5cbiAgICAgICAgPFN2Zy8+XG4gICAgICA8L2Rpdj5cbiAgICApO1xuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IEFwcDsiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "App.js"
+      ],
+      "names": [
+        "App",
+        "Component"
+      ],
+      "mappings": ";;;;;;;;AAAA;;;;AAEA;;;;;;;;;;;;IAEMA,G;;;;;;;;;;;6BAEK;AACP,aACE;AAAA;AAAA,UAAK,WAAU,KAAf;AACE;AADF,OADF;AAKD;;;;EARe,gBAAMC,S;;kBAWTD,G",
+      "file": "App.js",
+      "sourceRoot": "/app/src/components",
+      "sourcesContent": [
+        "import React from 'react';\n\nimport Svg from './Svg';\n\nclass App extends React.Component {\n\n  render() {\n    return (\n      <div className=\"App\">\n        <Svg/>\n      </div>\n    );\n  }\n}\n\nexport default App;"
+      ]
+    },
+    "mtime": 1509516837470
+  },
+  "{\"filename\":\"/app/src/components/Svg.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/components\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "inherits",
+        "possibleConstructorReturn",
+        "createClass",
+        "classCallCheck",
+        "interopRequireDefault",
+        "interopRequireWildcard"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "react",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "React"
+              }
+            ]
+          },
+          {
+            "source": "d3",
+            "imported": [
+              "*"
+            ],
+            "specifiers": [
+              {
+                "kind": "namespace",
+                "local": "d3"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/components/Svg.js",
+      "filenameRelative": "/app/src/components/Svg.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "Svg.js",
+      "sourceFileName": "Svg.js",
+      "sourceRoot": "/app/src/components",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/components",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "Svg"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _d = require(\"d3\");\n\nvar d3 = _interopRequireWildcard(_d);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Svg = function (_React$Component) {\n  _inherits(Svg, _React$Component);\n\n  function Svg() {\n    _classCallCheck(this, Svg);\n\n    return _possibleConstructorReturn(this, (Svg.__proto__ || Object.getPrototypeOf(Svg)).apply(this, arguments));\n  }\n\n  _createClass(Svg, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var svg = d3.select(\"svg\"),\n          width = +svg.attr(\"width\"),\n          height = +svg.attr(\"height\"),\n          radius = Math.min(width, height) / 2,\n          g = svg.append(\"g\").attr(\"transform\", \"translate(\" + width / 2 + \",\" + height / 2 + \")\");\n\n      var fader = function fader(color) {\n        return d3.interpolateRgb(color, \"#fff\")(0.2);\n      },\n          color = d3.scaleOrdinal(d3.schemeCategory10.map(fader));\n\n      var pie = d3.pie().value(function (d) {\n        return d.value;\n      });\n\n      var path = d3.arc().outerRadius(radius - 10).innerRadius(0);\n\n      var label = d3.arc().outerRadius(radius - 40).innerRadius(radius - 40);\n\n      d3.json(\"api/poll/59f7606596472a3eb07322b9\", function (error, data) {\n        if (error) throw error;\n        console.log('data = ', data);\n\n        var arc = g.selectAll(\".arc\").data(pie(data)).enter().append(\"g\").attr(\"class\", \"arc\");\n\n        arc.append(\"path\").attr(\"d\", path).attr(\"fill\", function (d) {\n          return color(d.data.label);\n        });\n\n        arc.append(\"text\").attr(\"transform\", function (d) {\n          return \"translate(\" + label.centroid(d) + \")\";\n        }).attr(\"dy\", \"0.35em\").text(function (d) {\n          return d.data.label;\n        });\n\n        var tooltip = d3.select(\"body\").append(\"div\").attr(\"id\", \"tooltip\").style(\"opacity\", 0);\n\n        arc.on(\"mouseover\", function (d) {\n          var mx = d3.event.pageX;\n          tooltip.transition().duration(200).style(\"opacity\", 0.9);\n          tooltip.html(d.data.name + \"<br/>$\" + d.data.value.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\")).style(\"left\", mx < 100 ? mx + \"px\" : mx - 100 + \"px\").style(\"top\", d3.event.pageY + \"px\").attr(\"data-value\", d.data.value);\n        }).on(\"mouseout\", function (d) {\n          tooltip.transition().duration(500).style(\"opacity\", 0);\n        });\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return _react2.default.createElement(\"svg\", { width: \"400\", height: \"400\" });\n    }\n  }]);\n\n  return Svg;\n}(_react2.default.Component);\n\nexports.default = Svg;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlN2Zy5qcyJdLCJuYW1lcyI6WyJkMyIsIlN2ZyIsInN2ZyIsInNlbGVjdCIsIndpZHRoIiwiYXR0ciIsImhlaWdodCIsInJhZGl1cyIsIk1hdGgiLCJtaW4iLCJnIiwiYXBwZW5kIiwiZmFkZXIiLCJpbnRlcnBvbGF0ZVJnYiIsImNvbG9yIiwic2NhbGVPcmRpbmFsIiwic2NoZW1lQ2F0ZWdvcnkxMCIsIm1hcCIsInBpZSIsInZhbHVlIiwiZCIsInBhdGgiLCJhcmMiLCJvdXRlclJhZGl1cyIsImlubmVyUmFkaXVzIiwibGFiZWwiLCJqc29uIiwiZXJyb3IiLCJkYXRhIiwiY29uc29sZSIsImxvZyIsInNlbGVjdEFsbCIsImVudGVyIiwiY2VudHJvaWQiLCJ0ZXh0IiwidG9vbHRpcCIsInN0eWxlIiwib24iLCJteCIsImV2ZW50IiwicGFnZVgiLCJ0cmFuc2l0aW9uIiwiZHVyYXRpb24iLCJodG1sIiwibmFtZSIsInRvU3RyaW5nIiwicmVwbGFjZSIsInBhZ2VZIiwiQ29tcG9uZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBOzs7O0FBQ0E7O0lBQVlBLEU7Ozs7Ozs7Ozs7OztJQUVOQyxHOzs7Ozs7Ozs7Ozt3Q0FFZ0I7QUFDbEIsVUFBTUMsTUFBTUYsR0FBR0csTUFBSCxDQUFVLEtBQVYsQ0FBWjtBQUFBLFVBQ0lDLFFBQVEsQ0FBQ0YsSUFBSUcsSUFBSixDQUFTLE9BQVQsQ0FEYjtBQUFBLFVBRUlDLFNBQVMsQ0FBQ0osSUFBSUcsSUFBSixDQUFTLFFBQVQsQ0FGZDtBQUFBLFVBR0lFLFNBQVNDLEtBQUtDLEdBQUwsQ0FBU0wsS0FBVCxFQUFnQkUsTUFBaEIsSUFBMEIsQ0FIdkM7QUFBQSxVQUlJSSxJQUFJUixJQUFJUyxNQUFKLENBQVcsR0FBWCxFQUFnQk4sSUFBaEIsQ0FBcUIsV0FBckIsRUFBa0MsZUFBZUQsUUFBUSxDQUF2QixHQUEyQixHQUEzQixHQUFpQ0UsU0FBUyxDQUExQyxHQUE4QyxHQUFoRixDQUpSOztBQU1BLFVBQU1NLFFBQVEs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RUFja0IsYUFBSztBQUNuQkYsa0JBQVFNLFVBQVIsR0FBcUJDLFFBQXJCLENBQThCLEdBQTlCLEVBQW1DTixLQUFuQyxDQUF5QyxTQUF6QyxFQUFvRCxDQUFwRDtBQUNELFNBaEJIO0FBaUJELE9BekNEO0FBMENEOzs7NkJBRVE7QUFDUCxhQUFPLHVDQUFLLE9BQU0sS0FBWCxFQUFpQixRQUFPLEtBQXhCLEdBQVA7QUFDRDs7OztFQXJFZSxnQkFBTVksUzs7a0JBeUVUL0MsRyIsImZpbGUiOiJTdmcuanMiLCJzb3VyY2VSb290IjoiL2FwcC9zcmMvY29tcG9uZW50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgKiBhcyBkMyBmcm9tIFwiZDNcIjtcblxuY2xhc3MgU3ZnIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgXG4gIGNvbXBvbmVudERpZE1vdW50KCkge1xuICAgIGNvbnN0IHN2ZyA9IGQzLnNlbGVjdChcInN2Z1wiKSxcbiAgICAgICAgd2lkdGggPSArc3ZnLmF0dHIoXCJ3aWR0aFwiKSxcbiAgICAgICAgaGVpZ2h0ID0gK3N2Zy5hdHRyKFwiaGVpZ2h0XCIpLFxuICAgICAgICByYWRpdXMgPSBNYXRoLm1pbih3aWR0aCwgaGVpZ2h0KSAvIDIsXG4gICAgICAgIGcgPSBzdmcuYXBwZW5kKFwiZ1wiKS5hdHRyKFwidHJhbnNmb3JtXCIsIFwidHJhbnNsYXRlKFwiICsgd2lkdGggLyAyICsgXCIsXCIgKyBoZWlnaHQgLyAyICsgXCIpXCIpO1xuXG4gICAgY29uc3QgZmFkZXIgPSBjb2xvciA9PiBkMy5pbnRlcnBvbGF0ZVJnYihjb2xvciwgXCIjZmZmXCIpKDAuMiksXG4gICAgICBjb2xvciA9IGQzLnNjYWxlT3JkaW5hbChkMy5zY2hlbWVDYXRlZ29yeTEwLm1hcChmYWRlcikpO1xuXG4gICAgY29uc3QgcGllID0gZDMucGllKClcbiAgICAgICAgLnZhbHVlKGZ1bmN0aW9uKGQpIHsgcmV0dXJuIGQudmFsdWU7IH0pO1xuXG4gICAgY29uc3QgcGF0aCA9IGQzLmFyYygpXG4gICAgICAgIC5vdXRlclJhZGl1cyhyYWRpdXMgLSAxMClcbiAgICAgICAgLmlubmVyUmFkaXVzKDApO1xuXG4gICAgY29uc3QgbGFiZWwgPSBkMy5hcmMoKVxuICAgICAgICAub3V0ZXJSYWRpdXMocmFkaXVzIC0gNDApXG4gICAgICAgIC5pbm5lclJhZGl1cyhyYWRpdXMgLSA0MCk7XG5cbiAgICBkMy5qc29uKFwiYXBpL3BvbGwvNTlmNzYwNjU5NjQ3MmEzZWIwNzMyMmI5XCIsIChlcnJvciwgZGF0YSkgPT4ge1xuICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjtcbiAgICAgIGNvbnNvbGUubG9nKCdkYXRhID0gJywgZGF0YSk7XG5cbiAgICAgIGNvbnN0IGFyYyA9IGcuc2VsZWN0QWxsKFwiLmFyY1wiKVxuICAgICAgICAuZGF0YShwaWUoZGF0YSkpXG4gICAgICAgIC5lbnRlcigpLmFwcGVuZChcImdcIilcbiAgICAgICAgICAuYXR0cihcImNsYXNzXCIsIFwiYXJjXCIpO1xuXG4gICAgICBhcmMuYXBwZW5kKFwicGF0aFwiKVxuICAgICAgICAgIC5hdHRyKFwiZFwiLCBwYXRoKVxuICAgICAgICAgIC5hdHRyKFwiZmlsbFwiLCBmdW5jdGlvbihkKSB7IHJldHVybiBjb2xvcihkLmRhdGEubGFiZWwpOyB9KTtcblxuICAgICAgYXJjLmFwcGVuZChcInRleHRcIilcbiAgICAgICAgICAuYXR0cihcInRyYW5zZm9ybVwiLCBmdW5jdGlvbihkKSB7IHJldHVybiBcInRyYW5zbGF0ZShcIiArIGxhYmVsLmNlbnRyb2lkKGQpICsgXCIpXCI7IH0pXG4gICAgICAgICAgLmF0dHIoXCJkeVwiLCBcIjAuMzVlbVwiKVxuICAgICAgICAgIC50ZXh0KGZ1bmN0aW9uKGQpIHsgcmV0dXJuIGQuZGF0YS5sYWJlbDsgfSk7XG4gICAgICBcbiAgICAgIGNvbnN0IHRvb2x0aXAgPSBkM1xuICAgICAgICAuc2VsZWN0KFwiYm9keVwiKVxuICAgICAgICAuYXBwZW5kKFwiZGl2XCIpXG4gICAgICAgIC5hdHRyKFwiaWRcIiwgXCJ0b29sdGlwXCIpXG4gICAgICAgIC5zdHlsZShcIm9wYWNpdHlcIiwgMCk7XG4gICAgICBcbiAgICAgIGFyY1xuICAgICAgICAub24oXCJtb3VzZW92ZXJcIiwgZCA9PiB7XG4gICAgICAgICAgY29uc3QgbXggPSBkMy5ldmVudC5wYWdlWDtcbiAgICAgICAgICB0b29sdGlwLnRyYW5zaXRpb24oKS5kdXJhdGlvbigyMDApLnN0eWxlKFwib3BhY2l0eVwiLCAwLjkpO1xuICAgICAgICAgIHRvb2x0aXBcbiAgICAgICAgICAgIC5odG1sKFxuICAgICAgICAgICAgICBgJHtkLmRhdGEubmFtZX08YnIvPiQke2QuZGF0YS52YWx1ZVxuICAgICAgICAgICAgICAgIC50b1N0cmluZygpXG4gICAgICAgICAgICAgICAgLnJlcGxhY2UoL1xcQig/PShcXGR7M30pKyg/IVxcZCkpL2csIFwiLFwiKX1gXG4gICAgICAgICAgICApXG4gICAgICAgICAgICAuc3R5bGUoXCJsZWZ0XCIsIG14IDwgMTAwID8gbXggKyBcInB4XCIgOiBteCAtIDEwMCArIFwicHhcIilcbiAgICAgICAgICAgIC5zdHlsZShcInRvcFwiLCBkMy5ldmVudC5wYWdlWSArIFwicHhcIilcbiAgICAgICAgICAgIC5hdHRyKFwiZGF0YS12YWx1ZVwiLCBkLmRhdGEudmFsdWUpO1xuICAgICAgICB9KVxuICAgICAgICAub24oXCJtb3VzZW91dFwiLCBkID0+IHtcbiAgICAgICAgICB0b29sdGlwLnRyYW5zaXRpb24oKS5kdXJhdGlvbig1MDApLnN0eWxlKFwib3BhY2l0eVwiLCAwKTtcbiAgICAgICAgfSk7XG4gICAgfSk7XG4gIH1cbiAgXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gPHN2ZyB3aWR0aD1cIjQwMFwiIGhlaWdodD1cIjQwMFwiPjwvc3ZnPjtcbiAgfVxuICBcbn1cblxuZXhwb3J0IGRlZmF1bHQgU3ZnOyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "Svg.js"
+      ],
+      "names": [
+        "d3",
+        "Svg",
+        "svg",
+        "select",
+        "width",
+        "attr",
+        "height",
+        "radius",
+        "Math",
+        "min",
+        "g",
+        "append",
+        "fader",
+        "interpolateRgb",
+        "color",
+        "scaleOrdinal",
+        "schemeCategory10",
+        "map",
+        "pie",
+        "value",
+        "d",
+        "path",
+        "arc",
+        "outerRadius",
+        "innerRadius",
+        "label",
+        "json",
+        "error",
+        "data",
+        "console",
+        "log",
+        "selectAll",
+        "enter",
+        "centroid",
+        "text",
+        "tooltip",
+        "style",
+        "on",
+        "mx",
+        "event",
+        "pageX",
+        "transition",
+        "duration",
+        "html",
+        "name",
+        "toString",
+        "replace",
+        "pageY",
+        "Component"
+      ],
+      "mappings": "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",
+      "file": "Svg.js",
+      "sourceRoot": "/app/src/components",
+      "sourcesContent": [
+        "import React from 'react';\nimport * as d3 from \"d3\";\n\nclass Svg extends React.Component {\n  \n  componentDidMount() {\n    const svg = d3.select(\"svg\"),\n        width = +svg.attr(\"width\"),\n        height = +svg.attr(\"height\"),\n        radius = Math.min(width, height) / 2,\n        g = svg.append(\"g\").attr(\"transform\", \"translate(\" + width / 2 + \",\" + height / 2 + \")\");\n\n    const fader = color => d3.interpolateRgb(color, \"#fff\")(0.2),\n      color = d3.scaleOrdinal(d3.schemeCategory10.map(fader));\n\n    const pie = d3.pie()\n        .value(function(d) { return d.value; });\n\n    const path = d3.arc()\n        .outerRadius(radius - 10)\n        .innerRadius(0);\n\n    const label = d3.arc()\n        .outerRadius(radius - 40)\n        .innerRadius(radius - 40);\n\n    d3.json(\"api/poll/59f7606596472a3eb07322b9\", (error, data) => {\n      if (error) throw error;\n      console.log('data = ', data);\n\n      const arc = g.selectAll(\".arc\")\n        .data(pie(data))\n        .enter().append(\"g\")\n          .attr(\"class\", \"arc\");\n\n      arc.append(\"path\")\n          .attr(\"d\", path)\n          .attr(\"fill\", function(d) { return color(d.data.label); });\n\n      arc.append(\"text\")\n          .attr(\"transform\", function(d) { return \"translate(\" + label.centroid(d) + \")\"; })\n          .attr(\"dy\", \"0.35em\")\n          .text(function(d) { return d.data.label; });\n      \n      const tooltip = d3\n        .select(\"body\")\n        .append(\"div\")\n        .attr(\"id\", \"tooltip\")\n        .style(\"opacity\", 0);\n      \n      arc\n        .on(\"mouseover\", d => {\n          const mx = d3.event.pageX;\n          tooltip.transition().duration(200).style(\"opacity\", 0.9);\n          tooltip\n            .html(\n              `${d.data.name}<br/>$${d.data.value\n                .toString()\n                .replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\")}`\n            )\n            .style(\"left\", mx < 100 ? mx + \"px\" : mx - 100 + \"px\")\n            .style(\"top\", d3.event.pageY + \"px\")\n            .attr(\"data-value\", d.data.value);\n        })\n        .on(\"mouseout\", d => {\n          tooltip.transition().duration(500).style(\"opacity\", 0);\n        });\n    });\n  }\n  \n  render() {\n    return <svg width=\"400\" height=\"400\"></svg>;\n  }\n  \n}\n\nexport default Svg;"
+      ]
+    },
+    "mtime": 1509529188607
+  }
+}
