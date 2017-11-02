@@ -3,7 +3,9 @@ import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import bodyParser from 'body-parser';
+import axios from 'axios';
 import apiRouter from './api';
+import config from './config';
 
 import App from './src/components/App';
 
@@ -24,9 +26,16 @@ app.set('view engine', 'ejs');
 // http://expressjs.com/en/starter/basic-routing.html 
 app.get("/", function (request, response) {
   //response.sendFile(__dirname + '/views/index.html');
-  response.render('index', {
-    initialMarkup: ReactDOMServer.renderToString(<App/>)
-  });
+  axios.get(`${config.serverUrl}/api/all`)
+    .then(resp => {
+      response.render('index', {
+        initialMarkup: ReactDOMServer.renderToString(<App initialData={resp.data} />),
+        initialData: resp.data
+      });
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 });
 
 app.use('/api', apiRouter);

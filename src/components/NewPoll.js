@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewPoll = () => {
   return ( 
-    <form action="api/newpoll" method="POST">
+    <form action="api/newpoll" method="POST" className="NewPoll">
       <h1>Create a new poll!</h1>
       <div className="form-group">
         <label htmlFor="title">Title of the Poll:</label>
