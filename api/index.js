@@ -1,22 +1,22 @@
 import express from 'express';
+import assert from 'assert';
 import Poll from './schema';
 
 const router = express.Router();
 
-router.get('/population', (req, res) => {
-  const data = [
-    {age: "<5", population: 2704659},
-    {age: "5-13", population: 4499890},
-    {age: "14-17", population: 2159981},
-    {age: "18-24", population: 3853788},
-    {age: "25-44", population: 14106543},
-    {age: "45-64", population: 8819342}
-  ];
-  res.json(data);
+router.get('/all', (req, res) => {
+  Poll.find({}, (err, doc) => {
+    const contests = {};
+    if (!err) {
+      doc.forEach(contest => {
+        contests[contest._id] = contest;
+      });
+      res.json(contests);
+    } else {throw err;}
+  })
 });
 
 router.get('/poll/:id', (req, res) => {
-  console.log('req.params =', req.params);
   Poll.findOne({ _id: req.params.id }, (err, doc) => {
     if (err) {
       res.send(err.message);

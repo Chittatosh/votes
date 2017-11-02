@@ -3,6 +3,7 @@
 
 // by default, you've got jQuery,
 // add other scripts at the bottom of index.html
+/*
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height"),
@@ -42,7 +43,7 @@ d3.json("/api/population", (error, data) => {
       .text(function(d) { return d.data.age; });
 });
 
-/*
+
 $(function() {
   console.log('hello world :o');
   

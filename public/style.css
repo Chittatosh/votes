@@ -5,23 +5,31 @@
 /* less: http://lesscss.org/ */
 
 body {
-  background: #222;
-  color: #ddd;
+  background: #000;
 }
 
+.card-columns {
+  display: inline-block;
+}
+
+/* 
 .arc text {
-  font: 10px sans-serif;
+  font: 20px sans-serif;
   text-anchor: middle;
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 1;
 }
 
 .arc path {
   stroke: #fff;
+  stroke-width: 2;
 }
 
 #tooltip {
   position: absolute;
   text-align: center;
-  
+  width: 100px;
   padding: 2px;
   font: 15px sans-serif;
   color: #ddd;
@@ -31,9 +39,9 @@ body {
   pointer-events: none;
   font-weight: bold;
 }
-
+*/
 /*
-// width: 100px;
+// 
 //lightsteelblue
 
 * {
