@@ -20,7 +20,7 @@ class Vote extends React.Component {
 
   render() {
     return (
-      <form action="api/vote/59f7606596472a3eb07322ba" method="post" className="Vote">{/*onSubmit={this.handleSubmit}*/}
+      <form action="api/vote/59fc7c156f97fa19c0eae71c" method="post" className="Vote">{/*onSubmit={this.handleSubmit}*/}
         <div className="form-group">
           <label htmlFor="vote">Pick your favorite La Croix flavor:</label>
           <select className="form-control" id="vote" name="choice" value={this.state.value} onChange={this.handleChange}>

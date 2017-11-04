@@ -5,6 +5,7 @@ import Card from './Card';
 class App extends React.Component {
 
   render() {
+  	/*return <Vote />;*/
     const polls = this.props.initialData;
     return (
       <div className="App card-columns">

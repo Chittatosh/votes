@@ -2,9 +2,9 @@ import React from 'react';
 import * as d3 from "d3";
 
 class Svg extends React.Component {
-  //"#id"+this.props.poll._id
   componentDidMount() {
     const {_id, dataPoints} = this.props;
+    //console.log('dataPoints =', dataPoints);
     const svg = d3.select('#id'+_id),
         width = +svg.attr("width"),
         height = +svg.attr("height"),
@@ -24,8 +24,6 @@ class Svg extends React.Component {
     const label = d3.arc()
         .outerRadius(radius - 40)
         .innerRadius(radius - 40);
-
-    console.log('dataPoints =', dataPoints);
     
     const arc = g.selectAll(".arc")
       .data(pie(dataPoints))
@@ -62,7 +60,7 @@ class Svg extends React.Component {
       });
   }
   
-  render() {// id={'id'+this.props.poll._id}
+  render() {
     const {_id, dataPoints} = this.props;
     return <svg width="300" height="300" className="Svg" id={'id'+_id}></svg>;
   }

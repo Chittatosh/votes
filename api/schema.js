@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
+import config from '../config';
 
+require('dotenv').config();
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MLAB_URI, { useMongoClient: true });
 const db = mongoose.connection;

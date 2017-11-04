@@ -4,6 +4,8 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import bodyParser from 'body-parser';
 import axios from 'axios';
+import sassMiddleware from 'node-sass-middleware';
+import path from 'path';
 import apiRouter from './api';
 import config from './config';
 
@@ -13,6 +15,11 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'sass'),
+  dest: path.join(__dirname, 'public')
+}));
 
 app.use((req, res, next) => {
   console.log(
@@ -42,6 +49,6 @@ app.use('/api', apiRouter);
 app.use(express.static('public'));
 
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
+var listener = app.listen(config.port, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });

@@ -1,0 +1,38 @@
+body {
+  background: #000;
+}
+
+.card-columns {
+  display: inline-block;
+}
+
+.arc path {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  padding: 2px;
+  font: 15px sans-serif;
+  color: #ddd;
+  background: #222;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-weight: bold;
+}
+/*
+//lightsteelblue 
+//fill: #ffffff;
+
+.arc text {
+  font: 20px sans-serif;
+  text-anchor: middle;
+  
+  stroke: #000000;
+  stroke-width: 1;
+}
+*/
