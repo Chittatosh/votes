@@ -1,0 +1,46 @@
+body {
+  background: #000; }
+
+.card-columns {
+  display: inline-block; }
+
+.Svg {
+  font: 12px sans-serif;
+  margin: auto; }
+
+.Svg .label {
+  fill: #fff;
+  font-size: 12px; }
+
+.Svg .value {
+  fill: #000;
+  font-weight: bold; }
+
+path {
+  stroke: #fff; }
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  padding: 2px;
+  font: 15px sans-serif;
+  color: #ddd;
+  background: #222;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-weight: bold; }
+
+/*
+//lightsteelblue 
+//fill: #ffffff;
+
+.arc text {
+  font: 20px sans-serif;
+  text-anchor: middle;
+  
+  stroke: #000000;
+  stroke-width: 1;
+}
+*/

@@ -7,8 +7,7 @@
   "description": "What am I about?",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node server.js",
-    "heroku-postbuild": "webpack"
+    "start": "babel-node server.js"
   },
   "dependencies": {
     "axios": "^0.17.0",
