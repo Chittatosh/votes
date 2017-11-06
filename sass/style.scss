@@ -6,9 +6,23 @@ body {
   display: inline-block;
 }
 
-.arc path {
+.Svg {
+  font: 12px sans-serif;
+  margin: auto;
+}
+
+.Svg .label{
+  fill: #fff;
+  font-size: 12px;
+}
+
+.Svg .value{
+  fill: #000;
+  font-weight:bold;
+}
+
+path {
   stroke: #fff;
-  stroke-width: 2;
 }
 
 #tooltip {

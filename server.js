@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 app.set('view engine', 'ejs');
 
 // http://expressjs.com/en/starter/basic-routing.html 
-app.get("/", function (request, response) {
+app.get('/', function (request, response) {
   //response.sendFile(__dirname + '/views/index.html');
   axios.get(`${config.serverUrl}/api/all`)
     .then(resp => {

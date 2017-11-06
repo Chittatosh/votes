@@ -7,9 +7,8 @@
   "description": "What am I about?",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd",
-    "lint": "eslint src"
+    "start": "babel-node server.js",
+    "heroku-postbuild": "webpack"
   },
   "dependencies": {
     "axios": "^0.17.0",
