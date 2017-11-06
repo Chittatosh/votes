@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "start": "babel-node server.js",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "webpack -p"
   },
   "dependencies": {
     "axios": "^0.17.0",
