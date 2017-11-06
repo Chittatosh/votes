@@ -20,9 +20,7 @@
     "mongoose": "^4.13.0",
     "node-sass-middleware": "^0.11.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  },
-  "devDependencies": {
+    "react-dom": "^16.0.0",
     "babel-cli": "^6.0.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
