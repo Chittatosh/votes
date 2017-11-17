@@ -1,5 +1,5 @@
 {
-  "name": "pollsfcc.herokuapp.com",
+  "name": "pollsfcc",
   "version": "0.0.1",
   "description": "What am I about?",
   "main": "server.js",
