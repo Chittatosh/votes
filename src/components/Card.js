@@ -30,7 +30,7 @@ class Card extends React.Component {
           <Vote {...{_id, dataPoints, auth, modifyChart}}/>
           {auth && 
             <a className="btn btn-block btn-social btn-facebook" 
-              href="https://www.facebook.com/sharer/sharer.php?u=www.google.co.in">
+              href="https://www.facebook.com/sharer/sharer.php?u=pollfcc.herokuapp.com">
               <span className="fa fa-facebook" />Share on Facebook
             </a>
           }
