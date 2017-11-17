@@ -1,6 +1,6 @@
 {
   "name": "pollsfcc",
-  "version": "0.0.1",
+  "version": "1",
   "description": "What am I about?",
   "main": "server.js",
   "scripts": {
