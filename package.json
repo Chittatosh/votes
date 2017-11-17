@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd"
+    "dev": "webpack -p"
   },
   "dependencies": {
     "axios": "^0.17.0",
