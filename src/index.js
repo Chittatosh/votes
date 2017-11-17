@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 
 ReactDOM.hydrate(
-  <App initialData={window.initialData} />,
+  <App pollArr={window.pollArr} user={window.user} />,
   document.getElementById('root')
 );

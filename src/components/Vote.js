@@ -1,39 +1,110 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import axios from 'axios';
+
+import config from '../../config';
+
 
 class Vote extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: 'mango'};
+    this.state = {option: '', notification: null};
 
+    this.axiosCall = this.axiosCall.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  axiosCall(url, obj) {
+    const {_id, modifyChart} = this.props;
+    axios.post(url, obj)
+      .then(resp => {
+        if(resp.data.nModified) {
+          axios.get(config.apiUrl+'/poll/'+_id)
+            .then(resp => {
+              modifyChart(resp.data);//dataPoints
+            });
+        }
+      })
+      .catch(error => {
+        console.log('error: ', error);
+      });
+  }
+
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({option: event.target.value, notification: null});
   }
 
   handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
     event.preventDefault();
+    const notification = 
+      <div className="alert alert-danger py-0 mt-1" role="alert">
+        This choice exists!
+      </div>;
+    const {_id, dataPoints} = this.props;
+    const choice_id = event.target.select.value;
+    if(choice_id) {
+      if(choice_id=='new') {
+        const newChoice = event.target.input.value.trim().replace(/\s+/g, ' ').toLowerCase();
+        if(dataPoints.find(item => item.label === newChoice)) {
+          this.setState({notification: notification});
+        }
+        else {
+          this.setState({notification: null});
+          this.axiosCall(config.apiUrl+'/newchoice/'+_id, {label: newChoice, value: 1});
+        }
+      }
+      else {
+        this.axiosCall(config.apiUrl+'/vote/'+choice_id, {});
+      }
+    }
   }
 
   render() {
+    console.log('Vote');
+    const {dataPoints, auth} = this.props;
+  
+    const newSubmit = 
+      <div className="input-group">
+        <input type="text" className="form-control" name="input" aria-label="New choice..." 
+          placeholder="New choice..." maxLength="30" required/>
+        <span className="input-group-btn">
+          <button type="submit" className="btn btn-primary">Vote</button>
+        </span>
+      </div>;
+
+    const submit = <button type="submit" className="btn btn-primary btn-block">Vote</button>;
+
     return (
-      <form action="api/vote/59fc7c156f97fa19c0eae71c" method="post" className="Vote">{/*onSubmit={this.handleSubmit}*/}
+      <form className="Vote" onSubmit={this.handleSubmit}>
         <div className="form-group">
-          <label htmlFor="vote">Pick your favorite La Croix flavor:</label>
-          <select className="form-control" id="vote" name="choice" value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
+          <select className="form-control" name="select" onChange={this.handleChange} required>
+            <option value="">Select your choice</option>
+            {dataPoints.map(item => <option key={item._id} value={item._id}>{item.label}</option>)}
+            {auth && <option value="new">Add a new choice and vote for it</option>}
           </select>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        {this.state.option=='new' ? newSubmit : submit}
+        {this.state.notification}
       </form>
     );
   }
 }
 
+Vote.propTypes = {
+  _id: PropTypes.string.isRequired,
+  dataPoints: PropTypes.array.isRequired,
+  modifyChart: PropTypes.func.isRequired,
+  auth: PropTypes.bool.isRequired
+};
+
 export default Vote;
+// m-1 btn-block value={this.state.option}
+/*
+            <div className="alert alert-warning alert-dismissible show" role="alert">
+              Choice already exists!
+              <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+*/

@@ -6,26 +6,43 @@ body {
   display: inline-block;
 }
 
+#facebook {
+  color: #fff;
+}
+
 .Svg {
   font: 12px sans-serif;
+  display: block;
   margin: auto;
+
+  .label{
+    fill: #fff;
+    font-size: 12px;
+  }
+
+  .value{
+    fill: #000;
+    font-weight:bold;
+  }
+
+  path {
+    stroke: #fff;
+  }
+
+  line {
+    stroke: #aaa;
+  }
 }
 
-.Svg .label{
-  fill: #fff;
-  font-size: 12px;
+button {
+  cursor: pointer;
 }
 
-.Svg .value{
-  fill: #000;
-  font-weight:bold;
+.dropdown-menu {
+  width: 600px;
 }
 
-path {
-  stroke: #fff;
-}
-
-#tooltip {
+.tooltip {
   position: absolute;
   text-align: center;
   width: 100px;
@@ -38,7 +55,108 @@ path {
   pointer-events: none;
   font-weight: bold;
 }
+
+@media (min-width: 400px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 750px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
 /*
+
+    .Svg {
+      margin: auto !important;
+    }
+
+.card-columns {
+  margin: auto;
+}
+
+.Card {
+  margin: auto;
+  max-width: 351px;
+}
+
+@media only screen and (min-width: 33.9em) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 47.9em) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 61.9em) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 74.9em) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+ !important
+.Card {
+  width: 350px;
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 50em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+
+34em
 //lightsteelblue 
 //fill: #ffffff;
 

@@ -1,19 +1,20 @@
 import express from 'express';
-import assert from 'assert';
+//import assert from 'assert';
 import Poll from './schema';
 
 const router = express.Router();
 
 router.get('/all', (req, res) => {
   Poll.find({}, (err, doc) => {
-    const contests = {};
+    //const contests = {};
     if (!err) {
-      doc.forEach(contest => {
+      res.json(doc);
+      /*doc.forEach(contest => {
         contests[contest._id] = contest;
       });
-      res.json(contests);
+      res.json(contests);*/
     } else {throw err;}
-  })
+  });
 });
 
 router.get('/poll/:id', (req, res) => {
@@ -28,6 +29,28 @@ router.get('/poll/:id', (req, res) => {
   });
 });
 
+router.post('/vote/:id', (req, res) => {
+  Poll.update(
+    { 'dataPoints._id': req.params.id }, 
+    {'$inc': {'dataPoints.$.value': 1}}, 
+    (err, doc) => {
+      if (err) res.send(err.message);
+      if (doc) res.json(doc);//dataPoints
+    }
+  );
+});
+
+router.post('/newchoice/:id', (req, res) => {
+  Poll.update(
+    { _id: req.params.id }, 
+    { $push: { dataPoints: req.body } }, 
+    (err, doc) => {
+      if (err) res.send(err.message);
+      if (doc) res.json(doc);//dataPoints
+    }
+  );
+});
+
 router.post('/newpoll', (req, res) => {
   const title = req.body.question.replace(/\s+/g, ' ');
   
@@ -37,23 +60,13 @@ router.post('/newpoll', (req, res) => {
   const dataPoints = choiceArr.map(choice => ({label: choice, value: 0}));
   
   const newPoll = new Poll({ title, dataPoints });
-  newPoll.save(function(err, savedPoll) {
+  newPoll.save((err, savedPoll) => {
     if (err) {
-      console.log('Not saved');
       res.send(err.message);
       return;
     }
-    res.json(savedPoll);
-    console.log('Poll saved');
-  });
-});
-
-router.post('/vote/:id', (req, res) => {
-  console.log('req.body =', req.body);
-  console.log('req.params =', req.params);
-  Poll.update({ "dataPoints._id": req.params.id }, {'$inc': {'dataPoints.$.value': 1}}, (err, doc) => {
-    if (err) res.send(err.message);
-    if (doc) res.json(doc);
+    res.redirect('/');
+    console.log('Poll saved: ', savedPoll);
   });
 });
 

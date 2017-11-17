@@ -1,19 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 class Svg extends React.Component {
+  constructor(props) {
+    super(props);
 
-  componentDidMount() {
+    this.d3run = this.d3run.bind(this);
+  }
+
+  d3run() {
 
     const { _id, dataPoints } = this.props;
 
     const sum = dataPoints.reduce((acc, x) => acc + x.value, 0);
 
-    console.log('sum =', sum);
-
-    const width = 400,
-      height = 400,
+    const svg = d3.select('#id' + _id),
+      width = +svg.attr('width'),
+      height = +svg.attr('height'),
       radius = width / 4;
+
+    svg.selectAll('*').remove();
 
     const pie = d3.pie().value(d => d.value);
 
@@ -26,15 +33,12 @@ class Svg extends React.Component {
       .innerRadius(0)
       .outerRadius(radius - 7);
 
-    // Create svg element
-    const svg = d3.select('#id' + _id)
-      .attr('width', width)
-      .attr('height', height)
-      .append('g')
+    // Create svg g element
+    const gElement = svg.append('g')
       .attr('transform', `translate(${width / 2}, ${height / 2})`);
 
     // Tick marks
-    const ticks = svg.selectAll('line')
+    const ticks = gElement.selectAll('line')
       .data(piedata)
       .enter()
       .append('line');
@@ -42,12 +46,16 @@ class Svg extends React.Component {
     ticks.attr('x1', 0)
       .attr('x2', 0)
       .attr('y1', -radius + 10)
-      .attr('y2', -radius - 20)
-      .attr('stroke', 'white')
+      .attr('y2', d => {
+        if (d.data.value && (d.data.value * 100 / sum) >= 5)
+          return -radius - 20;
+        else
+          return -radius + 10;
+      })
       .attr('transform', d => `rotate(${(d.startAngle + d.endAngle) / 2 * (180 / Math.PI)})`);
 
     // Labels
-    const labels = svg.selectAll('text')
+    const labels = gElement.selectAll('text')
       .data(piedata)
       .enter()
       .append('text');
@@ -62,10 +70,15 @@ class Svg extends React.Component {
       })
       .attr('dy', '0.35em')
       .attr('text-anchor', 'middle')
-      .text(d => `${d.data.label.length > 10 ? d.data.label.substring(0,10)+'...' : d.data.label}`);
+      .text(d => {
+        if (d.data.value && (d.data.value * 100 / sum) >= 5)
+          return `${d.data.label.length > 14 ? d.data.label.substring(0,11)+'...' : d.data.label}`;
+        else
+          return null;
+      });
 
     // Piechart
-    const path = svg.selectAll('path')
+    const path = gElement.selectAll('path')
       .data(piedata)
       .enter()
       .append('path')
@@ -73,7 +86,7 @@ class Svg extends React.Component {
       .attr('d', arc);
 
     // Values
-    const values = svg
+    const values = gElement
       .append('g').selectAll('text')
       .data(piedata)
       .enter()
@@ -91,63 +104,49 @@ class Svg extends React.Component {
       .attr('text-anchor', 'middle')
       .text(d => `${d.data.value}`);
 
+    d3.select('#tooltip' + _id).remove();
+
     const tooltip = d3
       .select('body')
       .append('div')
-      .attr('id', 'tooltip')
+      .attr('id', 'tooltip' + _id)
+      .attr('class', 'tooltip')
       .style('opacity', 0);
 
     path
       .on('mouseover', d => {
         const mx = d3.event.pageX;
-        tooltip.transition().duration(200).style('opacity', 0.9);sum
+        tooltip.transition().duration(200).style('opacity', 0.9);
         tooltip
           .html(`${d.data.label}<br/>Votes: ${d.data.value} (${+(d.data.value * 100 / sum).toFixed(2)}%)`)
           .style('left', mx < 100 ? mx + 'px' : mx - 100 + 'px')
           .style('top', d3.event.pageY + 'px')
           .attr('data-value', d.data.value);
       })
-      .on('mouseout', d => {
+      .on('mouseout', () => {
         tooltip.transition().duration(500).style('opacity', 0);
       });
   }
 
+  componentDidMount() {
+    this.d3run();
+  }
+
+  componentDidUpdate() {
+    this.d3run();
+  }
+
   render() {
-    const { _id, dataPoints } = this.props;
-    return <svg className = 'Svg' id = {'id' + _id} />;
+    console.log('Svg');
+    const { _id } = this.props;
+    return <svg className = 'Svg' id = {'id' + _id} width='350' height='300' />;
   }
 
 }
 
+Svg.propTypes = {
+  _id: PropTypes.string.isRequired,
+  dataPoints: PropTypes.array.isRequired
+};
+
 export default Svg;
-
-/*
-
-    const path = d3.arc()
-      .outerRadius(radius - 10)
-      .innerRadius(0);
-
-    const label = d3.arc()
-      .outerRadius(radius - 40)
-      .innerRadius(radius - 40);
-
-    const arc = g.selectAll('.arc')
-      .data(pie(dataPoints))
-      .enter().append('g')
-      .attr('class', 'arc');
-
-    arc.append('path')
-      .attr('d', path)
-      .attr('fill', function(d) {
-        return color(d.data.label);
-      });
-
-    arc.append('text')
-      .attr('transform', function(d) {
-        return 'translate(' + label.centroid(d) + ')';
-      })
-      .attr('dy', '0.35em')
-      .text(function(d) {
-        return d.data.label;
-      });
- */

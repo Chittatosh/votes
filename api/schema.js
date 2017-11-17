@@ -1,11 +1,10 @@
 import mongoose from 'mongoose';
-import config from '../config';
 
 require('dotenv').config();
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MLAB_URI, { useMongoClient: true });
 const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
+db.on('error', console.error.bind(console, 'connection error:'));
 
 const dataPointsSchema = mongoose.Schema({
   label: {
@@ -33,4 +32,4 @@ const pollSchema = mongoose.Schema({
   dataPoints: [dataPointsSchema]
 });
 
-export default mongoose.model("Poll", pollSchema);
+export default mongoose.model('Poll', pollSchema);

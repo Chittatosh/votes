@@ -1,6 +1,12 @@
 <script type="text/javascript">
-  window.initialData = <%- JSON.stringify(initialData) -%>;
+  window.pollArr = <%- JSON.stringify(pollArr) -%>
 </script>
+
+<% if (user) { %>
+<script type="text/javascript">
+  window.user = <%- JSON.stringify(user) -%>
+</script>
+<% } %>
 
 <%- include('header') -%>
   <div id="root"><%- initialMarkup -%></div>
