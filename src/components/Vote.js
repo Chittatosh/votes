@@ -4,31 +4,13 @@ import axios from 'axios';
 
 import config from '../../config';
 
-
 class Vote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {option: '', notification: null};
 
-    this.axiosCall = this.axiosCall.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  axiosCall(url, obj) {
-    const {_id, modifyChart} = this.props;
-    axios.post(url, obj)
-      .then(resp => {
-        if(resp.data.nModified) {
-          axios.get(config.apiUrl+'/poll/'+_id)
-            .then(resp => {
-              modifyChart(resp.data);//dataPoints
-            });
-        }
-      })
-      .catch(error => {
-        console.log('error: ', error);
-      });
   }
 
   handleChange(event) {
@@ -41,7 +23,7 @@ class Vote extends React.Component {
       <div className="alert alert-danger py-0 mt-1" role="alert">
         This choice exists!
       </div>;
-    const {_id, dataPoints} = this.props;
+    const {_id, dataPoints, modifyChart} = this.props;
     const choice_id = event.target.select.value;
     if(choice_id) {
       if(choice_id=='new') {
@@ -51,17 +33,20 @@ class Vote extends React.Component {
         }
         else {
           this.setState({notification: null});
-          this.axiosCall(config.apiUrl+'/newchoice/'+_id, {label: newChoice, value: 1});
+          axios.post(config.apiUrl+'/newchoice/'+_id, {label: newChoice, value: 1})
+            .then(resp => modifyChart(resp.data.dataPoints))
+            .catch(error => console.error('Catch:', error));
         }
       }
       else {
-        this.axiosCall(config.apiUrl+'/vote/'+choice_id, {});
+        axios.post(config.apiUrl+'/vote/'+choice_id, {})
+          .then(resp => modifyChart(resp.data.dataPoints))
+          .catch(error => console.error('Catch:', error));
       }
     }
   }
 
   render() {
-    console.log('Vote');
     const {dataPoints, auth} = this.props;
   
     const newSubmit = 
