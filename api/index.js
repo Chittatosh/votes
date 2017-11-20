@@ -5,50 +5,39 @@ import Poll from './schema';
 const router = express.Router();
 
 router.get('/all', (req, res) => {
-  Poll.find({}, (err, doc) => {
-    //const contests = {};
-    if (!err) {
-      res.json(doc);
-      /*doc.forEach(contest => {
-        contests[contest._id] = contest;
-      });
-      res.json(contests);*/
-    } else {throw err;}
-  });
+  Poll.find({})
+    .then(pollArr => res.json(pollArr))
+    .catch(error => {
+      console.error(error);
+      res.status(404).send('Bad Request');
+    });
 });
 
 router.get('/poll/:id', (req, res) => {
-  Poll.findOne({ _id: req.params.id }, (err, doc) => {
-    if (err) {
-      res.send(err.message);
-      return;
-    }
-    if (doc) {
-      res.json(doc.dataPoints);
-    }
-  });
+  Poll.findOne({ _id: req.params.id })
+    .then(poll => res.json(poll.dataPoints))
+    .catch(error => {
+      console.error(error);
+      res.status(404).send('Bad Request');
+    });
 });
 
 router.post('/vote/:id', (req, res) => {
-  Poll.update(
-    { 'dataPoints._id': req.params.id }, 
-    {'$inc': {'dataPoints.$.value': 1}}, 
-    (err, doc) => {
-      if (err) res.send(err.message);
-      if (doc) res.json(doc);//dataPoints
-    }
-  );
+  Poll.findOneAndUpdate({ 'dataPoints._id': req.params.id }, {'$inc': {'dataPoints.$.value': 1}}, {new: true})
+    .then(updatedPoll => res.json(updatedPoll))
+    .catch(error => {
+      console.error(error);
+      res.status(404).send('Bad Request');
+    });
 });
 
 router.post('/newchoice/:id', (req, res) => {
-  Poll.update(
-    { _id: req.params.id }, 
-    { $push: { dataPoints: req.body } }, 
-    (err, doc) => {
-      if (err) res.send(err.message);
-      if (doc) res.json(doc);//dataPoints
-    }
-  );
+  Poll.findOneAndUpdate({ _id: req.params.id }, { $push: { dataPoints: req.body }}, {new: true})
+    .then(updatedPoll => res.json(updatedPoll))
+    .catch(error => {
+      console.error(error);
+      res.status(404).send('Bad Request');
+    });
 });
 
 router.post('/newpoll', (req, res) => {
@@ -60,14 +49,15 @@ router.post('/newpoll', (req, res) => {
   const dataPoints = choiceArr.map(choice => ({label: choice, value: 0}));
   
   const newPoll = new Poll({ title, dataPoints });
-  newPoll.save((err, savedPoll) => {
-    if (err) {
-      res.send(err.message);
-      return;
-    }
-    res.redirect('/');
-    console.log('Poll saved: ', savedPoll);
-  });
+  newPoll.save()
+    .then(savedPoll => {
+      console.log('savedPoll:', savedPoll);
+      res.redirect('/');
+    })
+    .catch(error => {
+      console.error(error);
+      res.status(404).send('Bad Request');
+    });
 });
 
 export default router;

@@ -137,7 +137,6 @@ class Svg extends React.Component {
   }
 
   render() {
-    console.log('Svg');
     const { _id } = this.props;
     return <svg className = 'Svg' id = {'id' + _id} width='350' height='300' />;
   }

@@ -33,6 +33,9 @@ passport.use(new Strategy({
   clientSecret: process.env.FACEBOOK_SECRET,
   callbackURL: 'http://localhost:8080/login/facebook/return'
 }, function(accessToken, refreshToken, profile, cb) {
+  console.log('accessToken: ', accessToken);
+  console.log('refreshToken: ', refreshToken);
+  console.log('profile: ', profile);
   // In this example, the user's Facebook profile is supplied as the user
   // record.  In a production-quality application, the Facebook profile should
   // be associated with a user record in the application's database, which
@@ -70,9 +73,12 @@ app.get('/', (request, response) => {
     });
 });
 app.get('/login/facebook', passport.authenticate('facebook'));
-app.get('/login/facebook/return', passport.authenticate('facebook', { failureRedirect: '/' }), (req, res) => {
-  res.redirect('/');
-});
+app.get('/login/facebook/return', 
+  passport.authenticate('facebook', { failureRedirect: '/' }), 
+  (req, res) => {
+    res.redirect('/');
+  }
+);
 app.get('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
@@ -85,5 +91,5 @@ app.use(express.static('public'));
 
 // listen for requests :)
 const listener = app.listen(config.port, () => {
-  console.log('Your app is listening on port ' + listener.address().port);
+  console.log('Your app is listening on port', listener.address().port, '...');
 });

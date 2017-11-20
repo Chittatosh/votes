@@ -1,9 +1,6 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "my-glitch-app",
-  "version": "0.0.1",
+  "name": "pollfcc",
+  "version": "1.0.0",
   "description": "What am I about?",
   "main": "server.js",
   "scripts": {
@@ -27,20 +24,19 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
-  },
-  "devDependencies": {
+    "react-router-dom": "^4.2.2",
     "babel-cli": "^6.0.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.10.0",
     "eslint-plugin-react": "^7.4.0",
-    "nodemon": "^1.12.1",
-    "uglifyjs-webpack-plugin": "^1.0.1",
-    "webpack": "^3.8.1"
+    "nodemon": "^1.12.1"
   },
   "engines": {
     "node": "8.x"
